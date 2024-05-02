@@ -1,9 +1,9 @@
-.hero__subtitle img{
+.hero__subtitle img {
     width: 2.3rem;
     height: 2.3rem;
 }
 
-.hero__content h1{
+.hero__content h1 {
     font-size: 3.2rem;
     font-weight: 600;
     margin-top: 1rem;
@@ -15,7 +15,7 @@
     color: var(--secondary-color);
 }
 
-.hero__content p{
+.hero__content p {
     font-size: 1.1rem;
     color: var(--text-color);
     line-height: 2rem;
@@ -29,22 +29,27 @@
     object-fit: cover;
 }
 
-.hero__content{
+.hero__content {
     padding-top: 3.5rem;
 }
 
-.hero__img-box{
+.hero__img-box {
     padding-top: 2rem;
 }
 
-.services__subtitle{
+.services__subtitle {
     font-size: 2.2rem;
     font-weight: 500;
     color: #ee6e6e;
     font-family: var(--subtitle-font-name);
 }
 
-.services__totle{
+.services__totle {
     font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.featured__tour-title {
+    font-size: 2.3rem;
     font-weight: 500;
 }
