@@ -8,26 +8,22 @@ import tourImg07 from "../images/tour-img07.jpg";
 
 const tours = [
   {
-    id: "01",
     title: "Westminister Bridge",
     city: "London",
     distance: 300,
-    address: 'Somewhere',
+    address: "Somewhere",
     price: 99,
     maxGroupSize: 10,
     desc: "this is the description",
-    reviews: [
+    reviews: 
+    [
       {
-        name: "jhon doe",
-        rating: 4.6,
-      },
-      {
-        name: "jhon doe",
-        rating: 5,
-      },
+      name: "jhon doe",
+      rating: 4.6,
+      }
     ],
     avgRating: 4.5,
-    photo: tourImg01,
+    photo: "../images/tour-img01.jpg",
     featured: true,
   },
   {
