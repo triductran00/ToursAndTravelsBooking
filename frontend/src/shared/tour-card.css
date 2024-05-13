@@ -25,13 +25,12 @@
     border-radius: 3px 0 0 0;
 }
 
-.card__top span i {
-    color: var(--secondary-color);
+.card__top i {
+    color: #FFDF00;
 }
 
-.tour__rating {
-    font-size: 0.9rem;
-    color: var(--text-color);
+.card__top span  {
+    color: var(--secondary-color);
 }
 
 .tour__location {
