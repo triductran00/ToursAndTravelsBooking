@@ -16,21 +16,22 @@ const servicesData = [
         title: 'Best Tour Guide',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
     },
-    {   imgUrl: customizationImg,
+    {
+        imgUrl: customizationImg,
         title: 'Customization',
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
     }
 ]
 const ServiceList = () => {
-  return (
-    <>
-        {servicesData.map((item,index)=>  (
-            <Col lg='3' key={index}>
-                <ServiceCard item={item} />
-            </Col>
-        ))}
-    </>
-  );
+    return (
+        <>
+            {servicesData.map((item, index) => (
+                <Col lg='3' md='6' sm='12' className='mb-4' key={index}>
+                    <ServiceCard item={item} />
+                </Col>
+            ))}
+        </>
+    );
 }
 
 export default ServiceList

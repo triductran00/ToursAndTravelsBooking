@@ -29,7 +29,7 @@
     color: #FFDF00;
 }
 
-.card__top span  {
+.card__top span {
     color: var(--secondary-color);
 }
 
@@ -39,7 +39,8 @@
     font-size: 0.9rem;
 }
 
-.tour__rating i, .tour__location i {
+.tour__rating i,
+.tour__location i {
     font-size: 1rem;
 }
 
@@ -77,12 +78,32 @@
     padding: 0.2rem 0.5rem;
 }
 
-.booking__btn a{
+.booking__btn a {
     text-decoration: none;
     font-size: 0.9rem;
     color: #fff;
 }
 
-.booking__btn a:hover{
+.booking__btn a:hover {
     color: #fff;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .tour__title {
+        font-size: 1rem;
+    }
+
+    .booking__btn a {
+        font-size: 0.8rem;
+    }
+
+    .booking__btn {
+        padding: .2rem .5rem !important;
+    }
+
+    .tour__location,
+    .tour__rating {
+        font-size: .8rem;
+    }
 }

@@ -8,6 +8,7 @@ import tourImg07 from "../images/tour-img07.jpg";
 
 const tours = [
   {
+    id:"01",
     title: "Westminister Bridge",
     city: "London",
     distance: 300,
@@ -23,7 +24,7 @@ const tours = [
       }
     ],
     avgRating: 4.5,
-    photo: "../images/tour-img01.jpg",
+    photo: tourImg01,
     featured: true,
   },
   {
