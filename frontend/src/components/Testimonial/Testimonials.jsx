@@ -44,7 +44,7 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava04} className='w-25 h-25 rounded-2' alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">Fat Cat</h6>
+                        <h6 className="mb-0 mt-3">Mạnh Hakyno</h6>
                         <p>Customer</p>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava05} className='w-25 h-25 rounded-2' alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">Lia Franklin</h6>
+                        <h6 className="mb-0 mt-3">Bbno$</h6>
                         <p>Customer</p>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava04} className='w-25 h-25 rounded-2' alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">Fat Cat</h6>
+                        <h6 className="mb-0 mt-3">Mạnh Hakyno</h6>
                         <p>Customer</p>
                     </div>
                 </div>
@@ -77,7 +77,7 @@ const Testimonials = () => {
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava05} className='w-25 h-25 rounded-2' alt="" />
                     <div>
-                        <h6 className="mb-0 mt-3">Pororo</h6>
+                        <h6 className="mb-0 mt-3">Bbno$</h6>
                         <p>Customer</p>
                     </div>
                 </div>

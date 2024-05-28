@@ -29,11 +29,11 @@ const Home = () => {
               <img src={worldImg} alt="" />
             </div>
             <h1>
-              Traveling opens the door to creating 
+              Traveling paves the way for unforgettable 
               <span className="highlight"> memories</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsa sapiente ducimus odio accusantium rem consectetur, similique dicta quae vel voluptas labore libero ullam repudiandae, hic quaerat reprehenderit, sequi ab.
+              Discover the essence of travel, crafting cherished memories along the way.
             </p>
           </div>
         </Col>
@@ -92,8 +92,8 @@ const Home = () => {
             <div className="experience__content">
               <Subtitle subtitle={"Experience"} />
 
-              <h2>With our all experience <br /> we will serve you</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Ipsa magni facilis amet rem, odit dignissimos nam officia, esse fugiat quidem ipsam dolorem tenetur quibusdam quo. Quas quidem odit pariatur. Eligendi!</p>
+              <h2>With our all experience <br /> we are here to serve you</h2>
+              <p>Let our extensive experience guide our commitment to serving you with excellence.</p>
             </div>
 
             <div className="counter__wrapper d-flex align-items-center gap-5">

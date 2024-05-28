@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 import { Container, Row, Col, ListGroup, ListGroupItem } from'reactstrap'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from '../../assets/images/logo2.png'
 
 const quick__links=[
@@ -37,15 +37,19 @@ const quick__links2=[
 const Footer = () => {
 
   const year = new Date().getFullYear
+  const navigate = useNavigate();
+  const navigateHome = () => {
+    navigate('/home');
+  }
 
   return (
     <footer className='footer'>
       <Container>
         <Row>
           <Col lg='3'>
-            <div className="logo">
-              <img src={logo} alt="" />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia tenetur sapiente nihil itaque sunt consequatur magnam excepturi eligendi iste similique architecto impedit reprehenderit velit dolore nostrum assumenda, pariatur nobis eos?</p>
+            <div className="logo" onClick={navigateHome}>
+              <img src={logo} alt="Logo" style={{ cursor: 'pointer' }} />
+              <p>Explore the world with us and discover unforgettable experiences. Our team is dedicated to providing you with the best travel insights and tips to make your journey extraordinary.</p>
               <div className="social__links d-flex align-items-center gap-4">
                 <span>
                   <Link to='#'><i class="ri-youtube-line"></i></Link>

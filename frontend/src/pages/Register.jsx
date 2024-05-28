@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, FormGroup, Button } from 'reactstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import '../styles/login.css'
 import registerImg from '../assets/images/register.png'
-import userIcon from '../assets/images/user.png'
+import userIcon from '../assets/images/user1.png'
 import { AuthContext } from '../context/AuthContext';
 import { BASE_URL } from '../utils/config';
 
@@ -71,7 +71,7 @@ const Register = () => {
                 <FormGroup>
                   <input type="password" placeholder='Password' required id='password' onChange={handleChange} />
                 </FormGroup>
-                <Button className="btn secondary__btn auth__btn" type='submit'>Register</Button>
+                <Button type='submit' style={{ width: '100%', backgroundColor: '#006CE4', borderColor: '#006CE4' }}>Register</Button>
               </Form>
               <p>Already have an account?<Link to='/login'>Login</Link></p>
             </div>

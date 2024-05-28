@@ -9,17 +9,17 @@ const servicesData = [
     {
         imgUrl: weatherImg,
         title: 'Calculate Weather',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
+        desc: 'Get accurate weather forecasts for your destinations to plan your trips perfectly.'
     },
     {
         imgUrl: guideImg,
         title: 'Best Tour Guide',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
+        desc: 'Enjoy tours with top-rated local guides who know all the hidden gems.'
     },
     {
         imgUrl: customizationImg,
         title: 'Customization',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. '
+        desc: 'Create your perfect travel itinerary with customizable options to suit your needs.'
     }
 ]
 const ServiceList = () => {

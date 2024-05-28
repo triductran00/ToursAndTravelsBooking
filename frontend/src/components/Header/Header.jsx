@@ -47,14 +47,17 @@ const Header = () => {
 
   const toggleMenu = () => menuRef.current.classList.toggle('show__menu')
 
+  const navigateHome = () => {
+    navigate('/home');
+  }
 
   return <header className='header' ref={headerRef}>
     <Container>
       <Row>
         <div className='nav__wrapper d-flex align-items-center justify-content-between'>
           {/* ============= logo =============  */}
-          <div className="logo">
-            <img src={logo} alt="" />
+          <div className="logo" onClick={navigateHome}>
+              <img src={logo} alt="Logo" style={{ cursor: 'pointer' }} />
           </div>
 
           {/* ============= logo end ============= */}

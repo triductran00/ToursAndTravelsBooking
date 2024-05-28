@@ -2,8 +2,8 @@ import React, { useState, useContext } from 'react'
 import { Container, Row, Col, Form, FormGroup, Button } from 'reactstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import '../styles/login.css'
-import loginImg from '../assets/images/login.png'
-import userIcon from '../assets/images/user.png'
+import loginImg from '../assets/images/login1.png'
+import userIcon from '../assets/images/user1.png'
 
 import { AuthContext } from '../context/AuthContext';
 import { BASE_URL } from '../utils/config';
@@ -73,7 +73,7 @@ const Login = () => {
                   <FormGroup>
                     <input type="password" placeholder='Password' required id='password' onChange={handleChange} />
                   </FormGroup>
-                  <Button className="btn secondary__btn auth__btn" type='submit'>Login</Button>
+                  <Button type='submit' style={{ width: '100%', backgroundColor: '#006CE4', borderColor: '#006CE4' }}>Login</Button>
                 </Form>
                 <p>Don't have an account? <Link to='/register'>Create</Link></p>
               </div>
