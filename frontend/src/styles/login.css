@@ -70,8 +70,8 @@
 
 
 .login__form p a {
-    color: var(--heading-color);
-    text-decoration: none;
+    color: #90D2FF;
+    text-decoration: underline;
     margin-left: 5px;
     font-weight: 500;
 }
