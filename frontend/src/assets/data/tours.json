@@ -32,7 +32,6 @@
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img03.jpg",
     "featured": true
   },
@@ -45,7 +44,6 @@
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img04.jpg",
     "featured": true
   },
@@ -58,7 +56,6 @@
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img05.jpg",
     "featured": true
   },
@@ -71,7 +68,6 @@
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img06.jpg",
     "featured": true
   },
@@ -84,7 +80,6 @@
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img07.jpg",
     "featured": true
   },
@@ -97,7 +92,6 @@
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img03.jpg",
     "featured": true
   },
@@ -110,7 +104,6 @@
     "maxGroupSize": 5,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img08.jpg",
     "featured": false
   },
@@ -123,8 +116,247 @@
     "maxGroupSize": 8,
     "desc": "this is the description",
     "reviews": [],
-
     "photo": "/tour-images/tour-img09.jpg",
     "featured": false
+  },
+  {
+    "title": "Hạ Long Bay",
+    "city": "Quảng Ninh",
+    "address": "Hạ Long, Quảng Ninh, Việt Nam",
+    "distance": 500,
+    "price": 150,
+    "maxGroupSize": 20,
+    "desc": "Kỳ quan thiên nhiên thế giới với hàng ngàn đảo đá và hang động kỳ thú.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img10.jpg",
+    "featured": true
+  },
+  {
+    "title": "Phong Nha Kẻ Bàng National Park",
+    "city": "Quảng Bình",
+    "address": "Sơn Trạch, Bố Trạch, Quảng Bình, Việt Nam",
+    "distance": 350,
+    "price": 120,
+    "maxGroupSize": 15,
+    "desc": "Di sản thiên nhiên thế giới với các hang động lớn và cảnh quan thiên nhiên độc đáo.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img11.jpg",
+    "featured": true
+  },
+  {
+    "title": "Bà Nà Hills",
+    "city": "Đà Nẵng",
+    "address": "Hòa Ninh, Hòa Vang, Đà Nẵng, Việt Nam",
+    "distance": 40,
+    "price": 80,
+    "maxGroupSize": 25,
+    "desc": "Khu du lịch với khí hậu mát mẻ, cáp treo dài nhất thế giới và cầu Vàng nổi tiếng.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img12.jpg",
+    "featured": true
+  },
+  {
+    "title": "Cù Lao Chàm",
+    "city": "Quảng Nam",
+    "address": "Tân Hiệp, Hội An, Quảng Nam, Việt Nam",
+    "distance": 15,
+    "price": 60,
+    "maxGroupSize": 20,
+    "desc": "Hòn đảo xinh đẹp với bãi biển trong xanh và hệ sinh thái đa dạng.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img13.jpg",
+    "featured": true
+  },
+  {
+    "title": "Cát Bà Island",
+    "city": "Hải Phòng",
+    "address": "Cát Hải, Hải Phòng, Việt Nam",
+    "distance": 70,
+    "price": 90,
+    "maxGroupSize": 30,
+    "desc": "Hòn đảo lớn nhất vịnh Bắc Bộ với nhiều bãi biển đẹp và khu bảo tồn thiên nhiên.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img14.jpg",
+    "featured": true
+  },
+  {
+    "title": "Sapa",
+    "city": "Lào Cai",
+    "address": "Sapa, Lào Cai, Việt Nam",
+    "distance": 350,
+    "price": 110,
+    "maxGroupSize": 12,
+    "desc": "Thị trấn vùng cao với cảnh quan thiên nhiên hùng vĩ và nét văn hóa đặc sắc của các dân tộc thiểu số.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img15.jpg",
+    "featured": true
+  },
+  {
+    "title": "Mỹ Sơn Sanctuary",
+    "city": "Quảng Nam",
+    "address": "Duy Phú, Duy Xuyên, Quảng Nam, Việt Nam",
+    "distance": 50,
+    "price": 70,
+    "maxGroupSize": 20,
+    "desc": "Di sản văn hóa thế giới với các đền tháp Chăm cổ kính.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img16.jpg",
+    "featured": false
+  },
+  {
+    "title": "Tam Cốc  Bích Động",
+    "city": "Ninh Bình",
+    "address": "Ninh Hải, Hoa Lư, Ninh Bình, Việt Nam",
+    "distance": 100,
+    "price": 85,
+    "maxGroupSize": 10,
+    "desc": "\"Vịnh Hạ Long trên cạn\" với những cánh đồng lúa và hệ thống hang động độc đáo.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img17.jpg",
+    "featured": false
+  },
+  {
+    "title": "Hồ Tây",
+    "city": "Hà Nội",
+    "address": "Tây Hồ, Hà Nội, Việt Nam",
+    "distance": 5,
+    "price": 0,
+    "maxGroupSize": 50,
+    "desc": "Hồ lớn nhất Hà Nội với không gian thoáng đãng và các điểm vui chơi giải trí.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img18.jpg",
+    "featured": false
+  },
+  {
+    "title": "Đà Lạt Flower Gardens",
+    "city": "Đà Lạt",
+    "address": "Trần Quốc Toản, Phường 8, Đà Lạt, Lâm Đồng, Việt Nam",
+    "distance": 2,
+    "price": 30,
+    "maxGroupSize": 50,
+    "desc": "Khu vườn hoa rộng lớn với nhiều loài hoa quý hiếm và cảnh quan tuyệt đẹp.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img19.jpg",
+    "featured": true
+  },
+  {
+    "title": "Cái Răng Floating Market",
+    "city": "Cần Thơ",
+    "address": "Hưng Lợi, Ninh Kiều, Cần Thơ, Việt Nam",
+    "distance": 6,
+    "price": 20,
+    "maxGroupSize": 30,
+    "desc": "Chợ nổi đặc trưng của miền Tây sông nước, nơi buôn bán các sản phẩm nông sản tươi ngon.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img20.jpg",
+    "featured": true
+  },
+  {
+    "title": "Côn Đảo",
+    "city": "Bà Rịa  Vũng Tàu",
+    "address": "Côn Đảo, Bà Rịa  Vũng Tàu, Việt Nam",
+    "distance": 230,
+    "price": 200,
+    "maxGroupSize": 15,
+    "desc": "Quần đảo hoang sơ với các bãi biển đẹp và di tích lịch sử phong phú.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img21.jpg",
+    "featured": true
+  },
+  {
+    "title": "Chùa Thiên Mụ",
+    "city": "Huế",
+    "address": "Hương Long, Huế, Thừa Thiên Huế, Việt Nam",
+    "distance": 3,
+    "price": 0,
+    "maxGroupSize": 50,
+    "desc": "Ngôi chùa cổ kính nổi tiếng với kiến trúc độc đáo và lịch sử lâu đời.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img22.jpg",
+    "featured": true
+  },
+  {
+    "title": "Pù Luông Nature Reserve",
+    "city": "Thanh Hóa",
+    "address": "Bá Thước, Thanh Hóa, Việt Nam",
+    "distance": 160,
+    "price": 100,
+    "maxGroupSize": 10,
+    "desc": "Khu bảo tồn thiên nhiên với cảnh quan núi rừng hoang sơ và hệ sinh thái đa dạng.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img23.jpg",
+    "featured": false
+  },
+  {
+    "title": "Hồ Núi Cốc",
+    "city": "Thái Nguyên",
+    "address": "Đại Từ, Thái Nguyên, Việt Nam",
+    "distance": 20,
+    "price": 50,
+    "maxGroupSize": 30,
+    "desc": "Hồ nước ngọt lớn với cảnh quan thiên nhiên hữu tình và các hoạt động vui chơi giải trí.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img24.jpg",
+    "featured": true
+  },
+  {
+    "title": "Tràng An Landscape Complex",
+    "city": "Ninh Bình",
+    "address": "Tràng An, Hoa Lư, Ninh Bình, Việt Nam",
+    "distance": 90,
+    "price": 90,
+    "maxGroupSize": 20,
+    "desc": "Di sản thế giới UNESCO với hệ thống hang động và cảnh quan thiên nhiên tuyệt đẹp.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img25.jpg",
+    "featured": true
+  },
+  {
+    "title": "Chùa Hương",
+    "city": "Hà Nội",
+    "address": "Hương Sơn, Mỹ Đức, Hà Nội, Việt Nam",
+    "distance": 60,
+    "price": 70,
+    "maxGroupSize": 25,
+    "desc": "Khu du lịch tâm linh nổi tiếng với các chùa, hang động và cảnh quan thiên nhiên đẹp mắt.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img26.jpg",
+    "featured": true
+  },
+  {
+    "title": "Biển Mũi Né",
+    "city": "Bình Thuận",
+    "address": "Mũi Né, Phan Thiết, Bình Thuận, Việt Nam",
+    "distance": 15,
+    "price": 40,
+    "maxGroupSize": 50,
+    "desc": "Bãi biển nổi tiếng với cát trắng, nước trong xanh và các hoạt động thể thao biển.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img27.jpg",
+    "featured": true
+  },
+  {
+    "title": "Động Phong Nha",
+    "city": "Quảng Bình",
+    "address": "Phong Nha, Bố Trạch, Quảng Bình, Việt Nam",
+    "distance": 55,
+    "price": 100,
+    "maxGroupSize": 15,
+    "desc": "Một trong những hang động đẹp nhất thế giới với hệ thống thạch nhũ kỳ vĩ.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img28.jpg",
+    "featured": true
+  },
+  {
+    "title": "Tháp Bà Ponagar",
+    "city": "Khánh Hòa",
+    "address": "Vĩnh Phước, Nha Trang, Khánh Hòa, Việt Nam",
+    "distance": 3,
+    "price": 30,
+    "maxGroupSize": 40,
+    "desc": "Khu di tích văn hóa Chăm với các tháp cổ kính và lễ hội truyền thống.",
+    "reviews": [],
+    "photo": "/tour-images/tour-img29.jpg",
+    "featured": true
   }
 ]
