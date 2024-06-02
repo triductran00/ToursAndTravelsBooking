@@ -39,7 +39,7 @@ const Testimonials = () => {
     return (
         <Slider {...settings}>
             <div className="testimonial py-4 px-3">
-                <p>meo meo meo meo meo</p>
+                <p>It's so great, I'm going to rap a song about this website</p>
 
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava04} className='w-25 h-25 rounded-2' alt="" />
@@ -50,7 +50,7 @@ const Testimonials = () => {
                 </div>
             </div>
             <div className="testimonial py-4 px-3">
-                <p>Dung tot lam em</p>
+                <p>The experience of booking a tour here is wonderful</p>
 
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava05} className='w-25 h-25 rounded-2' alt="" />
@@ -61,7 +61,7 @@ const Testimonials = () => {
                 </div>
             </div>
             <div className="testimonial py-4 px-3">
-                <p>meo meo meo meo meo</p>
+                <p>It's so great, I'm going to rap a song about this website</p>
 
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava04} className='w-25 h-25 rounded-2' alt="" />
@@ -72,7 +72,7 @@ const Testimonials = () => {
                 </div>
             </div>
             <div className="testimonial py-4 px-3">
-                <p>Dung tot lam em</p>
+                <p>The experience of booking a tour here is wonderful</p>
 
                 <div className="d-flex align-items-center gap-4 mt-3">
                     <img src={ava05} className='w-25 h-25 rounded-2' alt="" />
