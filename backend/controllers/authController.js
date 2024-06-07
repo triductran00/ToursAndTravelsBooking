@@ -2,12 +2,6 @@ import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-
-const validateEmail = (email) => {
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    return emailRegex.test(email);
-}
-
 //validate password
 const validatePassword = (password) => {
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
@@ -16,14 +10,7 @@ const validatePassword = (password) => {
 
 //user register
 export const register = async (req, res) => {
-    const { email, password, photo } = req.body;
-
-    if (!validateEmail(email)) {
-        return res.status(400).json({
-            success: false,
-            message: "Invalid email format"
-        });
-    }
+    const { password, photo } = req.body;
 
     if (!validatePassword(password)) {
         return res.status(400).json({
@@ -39,7 +26,7 @@ export const register = async (req, res) => {
 
         const newUser = new User({
             username: req.body.username,
-            email,
+            email: req.body.email,
             password: hash,
             photo
         });
@@ -57,40 +44,37 @@ export const register = async (req, res) => {
 }
 
 //user login
+//user login
 export const login = async (req, res) => {
-
     try {
-        const user = await User.findOne({email});
+        const { email, password } = req.body;
+
+        const user = await User.findOne({ email });
 
         //if user does not exist
-
-        if(!user){
-            return res.status(404).json({success:false, message:"User does not found"});
+        if (!user) {
+            return res.status(404).json({ success: false, message: "User does not found" });
         }
 
-        //if user exist
-        const checkPassword = await bcrypt.compare(req.body.password, user.password);
+        //if user exists
+        const checkPassword = await bcrypt.compare(password, user.password);
 
-        if(!checkPassword){
-            return res.status(401).json({success:false, message:"Invalid email or password"});;
+        if (!checkPassword) {
+            return res.status(401).json({ success: false, message: "Invalid email or password" });
         }
 
-        const {password, role, ...rest} = user._doc;
+        const { password: userPassword, role, ...rest } = user._doc;
 
         //create JWT token
-        
-        const token = jwt.sign({id:user._id, role:user.role}, process.env.JWT_SECRET_KEY,{expiresIn:"7d"});
+        const token = jwt.sign({ id: user._id, role: user.role }, process.env.JWT_SECRET_KEY, { expiresIn: "7d" });
 
         //set Token in the browser cookie
         res.cookie('access_token', token, {
-            httpOnly:true,
-            expires:token.expiresIn
-        }).status(200).json({token, data: { ...rest },role});
+            httpOnly: true,
+            expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000) // cookie will expire in 7 days
+        }).status(200).json({ token, data: { ...rest }, role });
 
     } catch (error) {
-        return res
-            .status(500)
-            .json({success:false, message:"Failed to login!",error:error.message
-        });
+        return res.status(500).json({ success: false, message: "Failed to login!", error: error.message });
     }
 }
