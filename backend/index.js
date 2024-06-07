@@ -36,12 +36,6 @@ const connect = async () => {
     }
 }
 
-
-// for testing
-app.get('/', (req, res) => {
-    res.send('Hello Vu!');
-});
-
 //middleware
 app.use(express.json());
 app.use(cors(corsOptions));

@@ -2,35 +2,62 @@ import User from "../models/User.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
+
+const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+}
+
+//validate password
+const validatePassword = (password) => {
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return passwordRegex.test(password);
+}
+
 //user register
 export const register = async (req, res) => {
-    try {
-        
-        //hash password
-        const salt = bcrypt.genSaltSync(10);
-        const hash = bcrypt.hashSync(req.body.password, salt);
+    const { email, password, photo } = req.body;
 
+    if (!validateEmail(email)) {
+        return res.status(400).json({
+            success: false,
+            message: "Invalid email format"
+        });
+    }
+
+    if (!validatePassword(password)) {
+        return res.status(400).json({
+            success: false,
+            message: "Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character"
+        });
+    }
+
+    try {
+        // Hash password
+        const salt = bcrypt.genSaltSync(10);
+        const hash = bcrypt.hashSync(password, salt);
 
         const newUser = new User({
             username: req.body.username,
-            email: req.body.email,
+            email,
             password: hash,
-            photo: req.body.photo
+            photo
         });
 
         await newUser.save();
 
-        res.status(200).json({success:true, message:"Successfully registered!"})
-
+        res.status(200).json({ success: true, message: "Successfully registered!" });
     } catch (error) {
-        res.status(500).json({success:true, message:"Failed to register!"})
+        if (error.code === 11000 && error.keyPattern && error.keyPattern.email === 1) {
+            // Duplicate email error
+            return res.status(400).json({ success: false, message: "Email is already registered" });
+        }
+        return res.status(500).json({ success: false, message: "Failed to register!" });
     }
 }
 
 //user login
 export const login = async (req, res) => {
-
-    const email = req.body.email;
 
     try {
         const user = await User.findOne({email});
@@ -45,7 +72,7 @@ export const login = async (req, res) => {
         const checkPassword = await bcrypt.compare(req.body.password, user.password);
 
         if(!checkPassword){
-            return res.status(401).json({success:false, message:"Invalid email or password"});
+            return res.status(401).json({success:false, message:"Invalid email or password"});;
         }
 
         const {password, role, ...rest} = user._doc;

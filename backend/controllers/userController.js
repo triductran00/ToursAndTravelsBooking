@@ -1,5 +1,6 @@
 import User from "../models/User.js";
 
+
 // Create a new User
 export const createUser = async (req, res) => {
     const newUser = new User(req.body);
@@ -84,7 +85,7 @@ export const getSingleUser = async (req, res) => {
 
 //getAll Users
 export const getAllUser = async (req, res) => {
-    
+
     try {
         const user = await User.find({})
             .skip(page * 8)
